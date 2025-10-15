@@ -1,0 +1,22 @@
+{
+  "name": "jwt-verify",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm install && npm run zip",
+    "zip": "rimraf dist && mkdirp dist && bestzip dist/lambda-function.zip * --exclude \"dist\""
+  },
+  "author": "Shigeki Shoji",
+  "license": "MIT",
+  "description": "",
+  "devDependencies": {
+    "bestzip": "^2.2.1",
+    "mkdirp": "^3.0.1",
+    "rimraf": "^6.0.1"
+  },
+  "dependencies": {
+    "jose": "^6.1.0"
+  }
+}

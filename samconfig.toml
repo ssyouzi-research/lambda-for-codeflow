@@ -1,0 +1,12 @@
+version = 0.1
+
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "lambda-for-codeflow-stack"
+s3_bucket = ""
+s3_prefix = "lambda-for-codeflow"
+region = "us-east-1"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+image_repositories = []
